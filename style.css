@@ -1,0 +1,165 @@
+ body {
+     background-color: rgb(1, 1, 88);
+     color: rgb(31, 30, 30);
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0%;
+     padding: 0;
+ }
+
+ #form_border {
+     background-color: rgb(198, 246, 255);
+     border: 2px solid rgb(106, 165, 243);
+     margin: 5px;
+     padding: 5px;
+ }
+
+ #btnDiv {
+     display: flex;
+     justify-content: center;
+ }
+
+ button {
+     margin: 30px;
+     padding: 10px;
+     height: 50px;
+     width: 200px;
+     background-color: rgb(1, 1, 88);
+     color: rgb(2, 101, 182);
+     font-weight: bold;
+     border: 2px solid rgb(255, 255, 255);
+
+ }
+
+ button:hover {
+     background-color: rgb(53, 173, 253);
+     color: white;
+ }
+
+ button:active {
+     background-color: rgb(12, 12, 12);
+     color: white;
+ }
+
+
+ #header {
+     padding: 2px;
+     color: rgb(198, 246, 255);
+     background-color: rgb(0, 0, 104);
+     border: 3px solid rgb(254, 254, 255);
+     text-align: center;
+     margin-bottom: 20px;
+
+ }
+
+ h2 {
+     color: aliceblue;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     background-color: rgb(5, 151, 219);
+     padding-left: 10px;
+ }
+
+ #table_div {
+     overflow-x: auto;
+     -webkit-overflow-scrolling: touch;
+     margin: 10px 0px 20px 0px;
+     background-color: aliceblue;
+ }
+
+ .t_heading {
+     font-weight: bold;
+     color: rgb(22, 1, 99);
+     padding: 5px;
+ }
+
+ td {
+     padding: 0px 2px 0px 2px;
+     text-align: center;
+ }
+
+ span {
+     color: red;
+ }
+
+ #print_button {
+     margin: 1px;
+     padding: 1px;
+     height: 20px;
+     width: 100px;
+     border: none;
+     background-color: rgb(198, 246, 255);
+     color: blue;
+     font-style: italic;
+     font-weight: bolder;
+ }
+
+ .flex-border {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .border {
+     display: flex;
+     justify-content: space-between;
+     width: 30%;
+     border: 2px solid gray;
+     padding: 5px;
+     margin: 2px;
+ }
+
+ .userInput {
+     width: 65%;
+ }
+
+ #addressInput {
+     width: 96.6%;
+ }
+
+
+ @media screen and (min-width: 650px) {
+
+     #addressInput input {
+         width: 92%;
+     }
+
+     #addressInput label {
+         width: 8%;
+     }
+ }
+
+ label {
+     font-style: italic;
+     font-weight: bold;
+     width: 40%;
+ }
+
+ @media screen and (max-width: 768px) {
+
+     .flex-border {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         flex-wrap: wrap;
+     }
+
+     .border {
+         display: flex;
+         justify-content: space-between;
+         width: 96.6%;
+         border: 2px solid gray;
+         padding: 5px;
+         margin-top: 3px;
+         margin: auto;
+     }
+
+     .userInput {
+         width: 65%;
+     }
+
+     label {
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight: bold;
+         width: 40%;
+     }
+ }

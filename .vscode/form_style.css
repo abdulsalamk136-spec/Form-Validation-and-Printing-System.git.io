@@ -1,0 +1,182 @@
+#form_body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Information_form {
+    border: 1px solid rgb(17, 17, 17);
+    background-color: rgb(248, 238, 165);
+    width: 45%;
+
+}
+
+h3 {
+    color: rgb(56, 56, 56);;
+    padding: 1rem;
+    border-bottom:1px solid rgb(56, 56, 56);
+     border-top:1px solid rgb(56, 56, 56);
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    background-color: rgb(119, 3, 18);
+}
+
+#set_part {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#first_part {
+    padding: 10px;
+    width: 50%;
+}
+
+#second_part {
+    padding: 10px;
+    width: 20%;
+
+}
+
+#third_part {
+    padding: 10px;
+    width: 50%;
+}
+
+label {
+    font-weight: bold;
+    font-size: medium;
+    padding: 5px;
+}
+
+#profile_img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 20%;
+}
+
+#last_part {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#mohor_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-image: url(mohor.webp);
+    background-size: contain;
+    height: 90px;
+    width: 90px;
+    color: rgb(177, 149, 25);
+    border: 1px solid gold;
+    border-radius: 50%;
+}
+
+#sign_div {
+    padding: 20px;
+}
+
+#signature {
+    padding-left: 30px;
+    font-style: italic;
+    font-family: cursive;
+}
+
+#signature_text {
+    padding-left: 5px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#sign_line {
+    border-bottom: 2px solid black;
+    height: 5px;
+    width: 170px;
+}
+
+span {
+    padding-left: 10px;
+    font-size: medium;
+}
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    label {
+        font-weight: bold;
+        font-size: small;
+        padding: 2px;
+    }
+
+    span {
+        padding-left: 10px;
+        font-size: small;
+    }
+
+    #Information_form {
+        padding: 5px;
+        width: 90%;
+    }
+
+    #mohor_img {
+        margin: 5px;
+        height: 55px;
+        width: 55px;
+        font-size: smaller;
+        margin-right: 20px;
+    }
+
+    #last_part {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    #set_part {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #first_part {
+        padding: 5px;
+        width: 60%;
+    }
+
+    #second_part {
+        padding: 5px;
+        width: 30%;
+
+    }
+
+    #third_part {
+        padding: 5px;
+        width: 60%;
+    }
+
+    h1 {
+        font-size: larger;
+    }
+    h3{
+        padding: 10px;
+        font-size: medium;
+    }
+
+}

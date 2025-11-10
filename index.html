@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+        Crud operation
+    </title>
+</head>
+
+<body>
+    <form id="form_border" method="GET" action="print.html">
+
+        <div id="header">
+            <h1>Software Engrneers Recruitment Form</h1>
+        </div>
+        <h2>Personal information</h2>
+        <hr />
+        <div class="flex-border">
+            <div class="border">
+                <label>Name</label>
+                <input class="userInput" id="name" type="text" placeholder="Enter your Name " />
+                <span id="name_span"></span>
+            </div>
+
+            <div class="border">
+                <label>Father Name</label>
+                <input class="userInput" id="fname" type="text" placeholder="Enter your Father name " />
+                <span id="fname_span"></span>
+            </div>
+
+            <div class="border">
+                <label>Gender :</label>
+                <div>
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female
+                </div>
+                <span id="gen_span"></span>
+            </div>
+
+            <div class="border">
+                <label>Age</label>
+                <input class="userInput" id="age" type="number" placeholder="Enter your Age" />
+                <span id="age_span"></span>
+            </div>
+
+            <div class="border">
+                <label>Date Of Birth</label>
+                <input class="userInput" id="dob" type="date" />
+                <span id="dob_span"></span>
+            </div>
+            <div class="border">
+                <label>CNIC Number</label>
+                <input class="userInput" id="cnic" type="text" placeholder="Enter your CINC " />
+                <span id="cnic_span"></span>
+            </div>
+        </div>
+        <H2>Contact Information</H2>
+        <hr />
+        <br />
+
+        <div class="flex-border">
+            <div class="border" id="addressInput">
+                <label>Address</label>
+                <input class="userInput" id="address" type="text" placeholder="Enter your address">
+                <span id="add_span"></span>
+            </div>
+
+            <div class="border">
+                <label>Email Address</label>
+                <input class="userInput" id="email" type="email" placeholder="Enter your email address">
+                <span id="email_span"></span>
+            </div>
+
+            <div class="border">
+                <label>Province </label>
+
+                <select id="province" class="userInput">
+                    <option value="" style="font-weight: bold;">&nbsp;Select a Province </option>
+                    <option>KPK</option>
+                    <option>Sindh</option>
+                    <option>Punjab</option>
+                    <option>Balochistan</option>
+                    <option>Gilgit baldistan</option>
+                    <option>Multan</option>
+                </select>
+                <span id="province_span"></span>
+
+            </div>
+            <div class="border">
+                <label>Phone Number</label>
+                <input class="userInput" id="num" type="number" placeholder="Enter your Phone Number " />
+                <span id="num_span"></span>
+            </div>
+            <br />
+        </div>
+        <h2>Eduactional information</h2>
+        <hr />
+        <div class="flex-border">
+            <div class="border">
+                <label>Qualification</label>
+                <select id="edu" class="userInput">
+                    <option value="" style="font-weight: bold;">&nbsp;Select your Qualification </option>
+                    <option>Matric</option>
+                    <option>Intermidiate</option>
+                    <option>Masters</option>
+                    <option>Under Graduate</option>
+                    <option>Graduation(Bachlors)</option>
+                    <option>Phd</option>
+                </select>
+                <span id="edu_span"></span>
+            </div>
+
+            <div class="border">
+                <label>Eduaction Institute</label>
+                <input class="userInput" id="Institute" type="text"
+                    placeholder="Enter name of educational Institute " />
+            </div>
+
+            <div class="border">
+                <label>Education City </label>
+                <select id="eduCity" class="userInput">
+                    <option value="" style="font-weight: bold;">&nbsp;Select a City</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Lahor">Lahor</option>
+                    <option value="Pishawer">Pishawer</option>
+                    <option value="Queta">Queta</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Faisalabad">Faisalabad</option>
+                    <option value="Hayderabad">Hayderabad</option>
+                </select>
+                <span id="city_span"></span>
+            </div>
+
+        </div>
+        <br />
+        <h2>Informational Proves (photographs)</h2><span>/* Optional fields */ </span>
+        <hr />
+        <div class="flex-border">
+            <div class="border">
+                <label>Your Picture</label>
+                <input class="userInput" type="file" accept="image/png, image/gif, image/jpeg" id="profile_image" />
+            </div>
+
+            <div class="border">
+                <label>Your CNIC copy</label>
+                <input class="userInput" type="file" alt="Original_CNIC_Copy_submit" />
+            </div>
+
+            <div class="border">
+                <label>Last Degree copy</label>
+                <input class="userInput" type="file" src="img_submit.gif" />
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <div id="btnDiv">
+            <Button id="b1" type="button" onclick="info()">
+                save
+            </Button>
+            <Button id="b2" type="button">
+                Clear
+            </Button>
+        </div>
+        <br />
+        <center>
+            <button id="print_button" type="submit">Print Form</button>
+            <h3>Thank you</h3>
+        </center>
+    </form>
+    <div id="table_div">
+        <table id="table" cellepadding="0" cellspacing="0" border="2px solid black" width="100%">
+            <thead>
+                <tr>
+                    <th colspan="12">
+                        Workers Info
+                    </th>
+                </tr>
+                <tr>
+                    <td class="t_heading">Name</td>
+                    <td class="t_heading">Father Name</td>
+                    <td class="t_heading">Age</td>
+                    <td class="t_heading">Phone Number</td>
+                    <td class="t_heading">Email</td>
+                    <td class="t_heading">Date of birth</td>
+                    <td class="t_heading">Province</td>
+                    <td class="t_heading">City</td>
+                    <td class="t_heading">Gender</td>
+                    <td class="t_heading">CNIC</td>
+                    <td class="t_heading">Qualification</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
