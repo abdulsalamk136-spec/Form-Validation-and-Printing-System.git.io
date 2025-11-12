@@ -117,7 +117,7 @@ span {
     margin: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
 
     label {
         font-weight: bold;
