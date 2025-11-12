@@ -117,7 +117,7 @@ span {
     margin: 5px;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 1440px) {
 
     label {
         font-weight: bold;
@@ -132,7 +132,7 @@ span {
 
     #Information_form {
         padding: 5px;
-        width: 90%;
+        width: 95%;
     }
 
     #mohor_img {
@@ -157,7 +157,7 @@ span {
 
     #first_part {
         padding: 5px;
-        width: 60%;
+        width: 65%;
     }
 
     #second_part {
@@ -168,7 +168,7 @@ span {
 
     #third_part {
         padding: 5px;
-        width: 60%;
+        width: 65%;
     }
 
     h1 {
