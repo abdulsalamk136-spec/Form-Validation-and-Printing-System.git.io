@@ -116,8 +116,7 @@
      width: 96.6%;
  }
 
-
- @media screen and (min-width: 650px) {
+@media screen and (min-width: 480px){
 
      #addressInput input {
          width: 92%;
