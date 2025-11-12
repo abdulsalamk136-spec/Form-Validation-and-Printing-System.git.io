@@ -61,6 +61,7 @@ label {
     width: 100px;
     border: 2px solid black;
     border-radius: 20%;
+    margin:auto;
 }
 
 #last_part {
@@ -163,6 +164,7 @@ span {
     #second_part {
         padding: 5px;
         width: 30%;
+        margin:auto;
 
     }
 
