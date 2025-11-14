@@ -116,7 +116,7 @@
      width: 96.6%;
  }
 
-@media screen and (min-width: 480px){
+ @media (min-width: 481px) and (max-width: 767px) {
 
      #addressInput input {
          width: 92%;
@@ -125,15 +125,6 @@
      #addressInput label {
          width: 8%;
      }
- }
-
- label {
-     font-style: italic;
-     font-weight: bold;
-     width: 40%;
- }
-
- @media screen and (max-width: 768px) {
 
      .flex-border {
          display: flex;
