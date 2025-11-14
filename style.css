@@ -115,22 +115,27 @@
  #addressInput {
      width: 96.6%;
  }
-
- @media (min-width: 481px) and (max-width: 767px) {
-
-     #addressInput input {
+#addressInput input {
          width: 92%;
      }
 
      #addressInput label {
          width: 8%;
      }
+label {
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight: bold;
+         width: 40%;
+     }
 
+ @media (min-width: 481px) and (max-width: 767px) {
+
+   
      .flex-border {
          display: flex;
          flex-direction: column;
          justify-content: space-around;
-         flex-wrap: wrap;
+        
      }
 
      .border {
@@ -145,11 +150,5 @@
 
      .userInput {
          width: 65%;
-     }
-
-     label {
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         font-weight: bold;
-         width: 40%;
      }
  }
