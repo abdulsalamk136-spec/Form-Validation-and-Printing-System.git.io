@@ -164,18 +164,6 @@ function info() {
       var c11 = newRow.insertCell(10); c11.innerHTML = edu1;
    }
 }
-/* form Print Variables
-var name_print = document.getElementById("name_print");
-var fname_print = document.getElementById("fname_print");
-var age_print = document.getElementById("age_print");
-var cnic_print = document.getElementById("cnic_print");
-var num_print = document.getElementById("num_print");
-var province_print = document.getElementById("province_print");
-var gen_print = document.getElementById("gen_print");
-var email_print = document.getElementById("email_print");
-var dob_print = document.getElementById("dob_print");
-var add_print = document.getElementById("add_print");
-var edu_print = document.getElementById("edu_print");*/
 
 const form = document.getElementById("form_border");
 
