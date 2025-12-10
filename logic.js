@@ -168,7 +168,7 @@ function info() {
 const form = document.getElementById("form_border");
 
 form.addEventListener("submit", function (e) {
-  // e.preventDefault();  <- i removed that prevent default function for a try
+   e.preventDefault();
    const nm1 = nm.value;
    const fname1 = fname.value;
    const gen1 = gen;
