@@ -1,4 +1,4 @@
-//Code for reteiving data
+//Code for retriving data
 var nm = document.getElementById("name");
 var fname = document.getElementById("fname");
 var age = document.getElementById("age");
@@ -13,7 +13,7 @@ var qualification = document.getElementById("edu");
 var address = document.getElementById("address");
 //var profileImg = document.getElementById("profile_image");
 
-// red text for required item (getting sapns )
+// red text for required item (getting spans )
 var name_span = document.getElementById("name_span");
 var fname_span = document.getElementById("fname_span");
 var age_span = document.getElementById("age_span");
@@ -168,7 +168,7 @@ function info() {
 const form = document.getElementById("form_border");
 
 form.addEventListener("submit", function (e) {
-   e.preventDefault();
+  // e.preventDefault();  <- i removed that prevent default function for a try
    const nm1 = nm.value;
    const fname1 = fname.value;
    const gen1 = gen;
